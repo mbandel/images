@@ -5,7 +5,7 @@ import javax.inject.Inject
 
 class UpdateImagesUseCase @Inject constructor(
     private val imageListRepository: ImageListRepository
-): suspend (String) -> Unit {
+) : suspend (String) -> Unit {
     override suspend fun invoke(query: String) {
         imageListRepository.updateImages(query)
     }

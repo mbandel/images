@@ -22,6 +22,10 @@ class ImageListViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
+            updateImages(state.value.searchQuery)
+        }
+
+        viewModelScope.launch {
             observeImageListUseCase().collect { imageViewDataList ->
                 _state.update { it.copy(imageViewDataList = imageViewDataList) }
             }
@@ -35,5 +39,13 @@ class ImageListViewModel @Inject constructor(
                 updateImagesUseCase(searchQuery)
             }
         }
+    }
+
+    fun updateIsDialogClicked(id: Int) {
+        _state.update { it.copy(shouldDisplayDialog = true, clickedImageId = id) }
+    }
+
+    fun dismissDialog() {
+        _state.update { it.copy(shouldDisplayDialog = false) }
     }
 }

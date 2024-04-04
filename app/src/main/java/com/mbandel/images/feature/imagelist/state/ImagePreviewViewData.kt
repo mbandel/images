@@ -1,6 +1,6 @@
 package com.mbandel.images.feature.imagelist.state
 
-data class ImageViewData(
+data class ImagePreviewViewData(
     val id: Int,
     val user: String,
     val tags: String,

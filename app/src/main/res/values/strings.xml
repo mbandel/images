@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Images</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="user">user:</string>
+    <string name="tags">tags:</string>
+    <string name="likes">likes:</string>
+    <string name="comments">comments:</string>
+    <string name="downloads">downloads:</string>
+    <string name="display_details">Display details</string>
+    <string name="display_details_question">Do you want to display details?</string>
+    <string name="confirm">Confirm</string>
+    <string name="dismiss">Dismiss</string>
 </resources>

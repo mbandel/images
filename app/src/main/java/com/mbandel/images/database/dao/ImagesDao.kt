@@ -17,6 +17,9 @@ interface ImagesDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun addImages(images: List<ImageEntity>)
 
+    @Query("SELECT * FROM $IMAGE_ENTITY_TABLE_NAME WHERE id = :id")
+    suspend fun findImageById(id: Int): ImageEntity
+
     @Query("DELETE FROM $IMAGE_ENTITY_TABLE_NAME")
     suspend fun deleteImages()
 }

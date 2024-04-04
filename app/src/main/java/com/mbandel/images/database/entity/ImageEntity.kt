@@ -16,6 +16,7 @@ data class ImageEntity(
     val detailsWidth: Int,
     val user: String,
     val tags: String,
+    val comments: Int,
     val likes: Int,
     val downloads: Int
 )

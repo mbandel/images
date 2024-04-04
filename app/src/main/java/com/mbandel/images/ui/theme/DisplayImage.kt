@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
@@ -20,6 +21,7 @@ fun DisplayImage(imageUrl: String, width: Int, height: Int) {
     Image(
         painter = painter,
         contentDescription = null,
-        modifier = Modifier.size(width = width.dp, height = height.dp)
+        modifier = Modifier.size(width = width.dp, height = height.dp),
+        contentScale = ContentScale.FillWidth
     )
 }
