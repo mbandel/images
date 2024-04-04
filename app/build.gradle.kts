@@ -90,6 +90,10 @@ dependencies {
     annotationProcessor("android.arch.persistence.room:compiler:1.1.1")
     kapt("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.0")
+    testImplementation("io.mockk:mockk:1.13.10")
+    testImplementation("io.kotest:kotest-runner-junit5:5.8.1")
 }
 
 kapt {

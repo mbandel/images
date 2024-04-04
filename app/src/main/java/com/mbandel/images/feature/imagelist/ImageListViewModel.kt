@@ -41,7 +41,7 @@ class ImageListViewModel @Inject constructor(
         }
     }
 
-    fun updateIsDialogClicked(id: Int) {
+    fun onDialogClicked(id: Int) {
         _state.update { it.copy(shouldDisplayDialog = true, clickedImageId = id) }
     }
 

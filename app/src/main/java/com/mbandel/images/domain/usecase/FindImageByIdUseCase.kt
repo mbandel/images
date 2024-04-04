@@ -1,6 +1,5 @@
 package com.mbandel.images.domain.usecase
 
-import com.mbandel.images.domain.Image
 import com.mbandel.images.domain.repository.ImageListRepository
 import com.mbandel.images.feature.imagedetails.state.ImageDetailsViewData
 import com.mbandel.images.feature.imagedetails.state.toImageDetailsViewData

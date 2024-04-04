@@ -83,7 +83,7 @@ private fun ImageListComposableScreen(viewModel: ImageListViewModel) {
             items(state.imageViewDataList) { image ->
                 ImageItem(
                     imageViewData = image,
-                    onImageClicked = { viewModel.updateIsDialogClicked(image.id) })
+                    onImageClicked = { viewModel.onDialogClicked(image.id) })
             }
         }
     }
